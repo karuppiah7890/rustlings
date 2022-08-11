@@ -5,8 +5,9 @@
 // I AM NOT DONE
 
 fn main() {
-    let cat = ("Furry McFurson", 3.5);
-    let /* your pattern here */ = cat;
+    let cat = ("Furry McFurson", 3.5, "bloo");
+    let (name, age, _) = cat;
+    let blah = cat.2;
 
-    println!("{} is {} years old.", name, age);
+    println!("{name} is {age} years old. {blah}");
 }

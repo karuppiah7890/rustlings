@@ -26,12 +26,16 @@ impl Package {
         }
     }
 
-    fn is_international(&self) -> ??? {
-        // Something goes here...
+    fn blah() -> bool {
+        return true
     }
 
-    fn get_fees(&self, cents_per_gram: i32) -> ??? {
-        // Something goes here...
+    fn is_international(&self) -> bool {
+        return !self.sender_country.eq(&self.recipient_country);
+    }
+
+    fn get_fees(&self, cents_per_gram: i32) -> i32 {
+        return self.weight_in_grams * cents_per_gram;
     }
 }
 
@@ -56,6 +60,7 @@ mod tests {
         let package = Package::new(sender_country, recipient_country, 1200);
 
         assert!(package.is_international());
+        assert!(Package::blah());
     }
 
     #[test]

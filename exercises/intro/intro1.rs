@@ -11,8 +11,14 @@
 
 // I AM NOT DONE
 
+fn something() {
+    println!("something")
+}
+
 fn main() {
+    println!("ok");
     println!("Hello and");
+    something();
     println!(r#"       welcome to...                      "#);
     println!(r#"                 _   _ _                  "#);
     println!(r#"  _ __ _   _ ___| |_| (_)_ __   __ _ ___  "#);

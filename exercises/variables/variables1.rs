@@ -5,6 +5,8 @@
 // I AM NOT DONE
 
 fn main() {
-    x = 5;
+    let x: i128 = 99999999999999999999999999999999999999;
+    // let x: i128 = 999999999999999999999999999999999999999; // this number is too big
+
     println!("x has the value {}", x);
 }
